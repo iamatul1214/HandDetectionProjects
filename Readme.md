@@ -8,6 +8,7 @@
 ```bash
 conda create --prefix ./env python=3.7 -y
 ```
+### Step 3: Activate the created environment
 ```bash
 conda activate ./env
 ```
@@ -15,7 +16,7 @@ OR
 ```bash
 source activate ./env
 ```
-### STEP 3- install the requirements
+### STEP 4- install the requirements
 ```bash
 pip install -r requirements.txt
 ```
