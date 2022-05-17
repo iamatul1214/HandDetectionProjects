@@ -53,7 +53,7 @@ while True:
             cv2.circle(img,(x1,y1),20,(255,0,255),cv2.FILLED)
             print("writing mode is on")
             if xp==0 and yp==0:
-                xp,yp=x1,y1   #To start drawing from the point where the iindex finger is
+                xp,yp=x1,y1   #To start drawing from the point where the index finger is
             cv2.line(img,(xp,yp),(x1,y1),(255,0,255),pen_thickness)
             cv2.line(canvas_image, (xp, yp), (x1, y1), (255, 0, 255), pen_thickness) # Since we saw that we cannot draw on a live image/video, hence let's create a black canvas.
             xp,yp=x1,y1       #To continue drawing the line by tracking x1,y1
