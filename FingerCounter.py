@@ -40,3 +40,7 @@ while True:
 
     cv2.imshow("Image",img)
     cv2.waitKey(1)
+    if cv2.waitKey(30) & 0xff == ord('E'):
+        break
+cap.release();
+cv2.destroyAllWindows()
